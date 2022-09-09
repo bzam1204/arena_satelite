@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Apresentacao from "../Apresentacao";
 import Campeoes from "../Campeoes";
 import Navbar from "../Navbar";
+import Patrocinadores from "../Patrocinadores";
 
 const Home = styled.div`
   width: 100vw;
@@ -20,6 +21,7 @@ export default function () {
       <Apresentacao />
       <Navbar />
       <Campeoes />
+      <Patrocinadores/>
     </Home>
   );
 }
