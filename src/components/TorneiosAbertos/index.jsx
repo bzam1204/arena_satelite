@@ -10,6 +10,8 @@ const TorneiosAbertos = styled.section`
   height: fit-content;
   padding: 4.44vw 0 0;
   width: 100vw;
+  background-color:#fff;
+
 `;
 const Title = styled.h2`
   color: #333333;
@@ -38,7 +40,7 @@ const Itens = styled.ul`
   }
 `;
 
-const Poster = styled.li`
+const Poster = styled.div`
   background: url(${poster}) no-repeat;
   background-size: cover;
   border-radius: 1.38vw;
@@ -51,7 +53,7 @@ const Item = styled.li``;
 // eslint-disable-next-line import/no-anonymous-default-export
 export default function () {
   return (
-    <TorneiosAbertos>
+    <TorneiosAbertos data-torneios_abertos >
       <Title>Torneios Abertos</Title>
       <Itens>
         <Item>

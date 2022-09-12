@@ -5,6 +5,8 @@ import VideoDemo from "../VideoDemo";
 
 const Apresentacao = styled.div`
   width: 91.22vw;
+  position: fixed;
+  z-index: -10;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

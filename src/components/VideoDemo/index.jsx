@@ -5,7 +5,7 @@ import video from "../../assets/video/demo.mp4";
 const Video = styled.video`
   width: 100vw;
   height: 125vw;
-  position: absolute;
+  position: fixed;
   object-fit: cover;
   z-index: -10;
 `;

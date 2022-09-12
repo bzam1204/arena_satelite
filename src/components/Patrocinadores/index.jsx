@@ -7,6 +7,7 @@ const Patrocinadores = styled.section`
   flex-direction: column;
   align-items: center;
   gap: 11.11vw;
+  background-color:#fff;
 
   width: 100vw;
   height: fit-content;
@@ -91,7 +92,7 @@ const Nome = styled.h3`
 // eslint-disable-next-line import/no-anonymous-default-export
 export default function () {
   return (
-    <Patrocinadores>
+    <Patrocinadores data-patrocinadores>
       <Title>Patrocinadores</Title>
       <Itens>
         <Item>

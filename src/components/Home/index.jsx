@@ -15,7 +15,12 @@ const Home = styled.div`
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
-  gap: 24px;
+`;
+
+const Linguica = styled.div`
+  width: 100vw;
+  height: 124vw;
+  background-color: transparent;
 `;
 
 // eslint-disable-next-line import/no-anonymous-default-export
@@ -23,13 +28,14 @@ export default function () {
   return (
     <Home>
       <Apresentacao />
+      <Linguica />
       <Navbar />
       <Campeoes />
       <Patrocinadores />
       <TorneiosAbertos />
-      <QuemSomos/>
-      <VemJogar/>
-      <Footer/>
+      <QuemSomos />
+      <VemJogar />
+      <Footer />
     </Home>
   );
 }

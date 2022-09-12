@@ -9,6 +9,8 @@ const QuemSomos = styled.section`
   padding:  0px;
   gap: 4.44vw;
   width: calc(100vw);
+  background-color:#fff;
+
   height: fit-content;
 `;
 
@@ -63,7 +65,7 @@ const Paragraph = styled.p`
 // eslint-disable-next-line import/no-anonymous-default-export
 export default function () {
   return (
-    <QuemSomos>
+    <QuemSomos data-quem_somos>
       <FotoGrupo></FotoGrupo>
       <Texto>
         <Title>Quem Somos</Title>

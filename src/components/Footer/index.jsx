@@ -13,7 +13,7 @@ const Footer = styled.section`
   gap: 16px;
   width: 100vw;
   height: fit-content;
-  background: #fefefe;
+  background-color:#fff;
 `;
 
 const Itens = styled.ul`

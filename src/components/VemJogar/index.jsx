@@ -12,6 +12,7 @@ const VemJogar = styled.section`
   height: fit-content;
   padding: 4.44vw 0;
   width: 100vw;
+  background-color: #fff;
 `;
 
 const Title = styled.h2`
@@ -123,8 +124,6 @@ const Contato = styled.p`
   width: fit-content;
 `;
 
-
-
 const Negrito = styled.strong`
   font-weight: bold;
 `;
@@ -132,7 +131,7 @@ const Negrito = styled.strong`
 // eslint-disable-next-line import/no-anonymous-default-export
 export default function () {
   return (
-    <VemJogar>
+    <VemJogar data-faca_parte>
       <Title>Vem jogar com a gente</Title>
       <FotoArena></FotoArena>
       <TextWhats>
@@ -148,7 +147,7 @@ export default function () {
       <ContainerEnderecoContato>
         <Endereco>Endereço: Praça Arcoires, Cidade Satélite</Endereco>
         <Contato>Contato: (95) 99126-3017</Contato>
-        <Maps/>
+        <Maps />
       </ContainerEnderecoContato>
     </VemJogar>
   );

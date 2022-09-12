@@ -9,6 +9,7 @@ const Campeoes = styled.section`
   justify-content: center;
   align-items: center;
   gap: 8.88vw;
+  background-color:#fff;
   width: 100vw;
 `;
 
@@ -44,7 +45,7 @@ const Itens = styled.ul`
 // eslint-disable-next-line import/no-anonymous-default-export
 export default function () {
   return (
-    <Campeoes>
+    <Campeoes data-campeoes>
       <Title>Campeões</Title>
       <Itens>
         <CardCampeao />
