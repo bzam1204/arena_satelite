@@ -13,7 +13,7 @@ const Video = styled.video`
 // eslint-disable-next-line import/no-anonymous-default-export
 export default function () {
   return (
-    <Video autoPlay muted loop id="myVideo">
+    <Video playsinline autoPlay muted loop id="myVideo">
       <source src={video} type="video/mp4" />
     </Video>
   );

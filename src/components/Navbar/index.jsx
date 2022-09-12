@@ -25,10 +25,15 @@ const Itens = styled.ul`
   order: 1;
   align-self: stretch;
   flex-grow: 0;
+  scrollbar-color: transparent;
 
   &::-webkit-scrollbar {
     border: none;
   }
+  scrollbar-color: #e6e6e6 green;
+  scrollbar-width:0px;
+
+
 `;
 
 const Item = styled.li`
