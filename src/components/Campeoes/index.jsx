@@ -46,7 +46,7 @@ const Itens = styled.ul`
 export default function () {
   return (
     <Campeoes data-campeoes>
-      <Title>Campeões</Title>
+      <Title data-campeoes_title>Campeões</Title>
       <Itens>
         <CardCampeao />
         <CardCampeao />
