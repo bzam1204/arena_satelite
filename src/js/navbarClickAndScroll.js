@@ -1,3 +1,5 @@
+import Canivete from "./Canivete";
+
 export default function navbarClickAndScroll() {
   scrollToTorneiosAbertos(getButton("navbar_torneio"), "torneios_abertos");
   scrollToTorneiosAbertos(getButton("navbar_campeoes"), "campeoes");
@@ -13,10 +15,12 @@ function getButton(dataType) {
 
 function scrollToTorneiosAbertos(btn, dataDestino) {
   btn.addEventListener("click", (e) => {
-    const navbar = document.querySelector("[data-navbar]");
-    const divDestino = document.querySelector(`[data-${dataDestino}]`);
-    let navbarHeight = navbar.getBoundingClientRect().height;
-    let y = divDestino.getBoundingClientRect().top - navbarHeight;
+    const [navbar, divDestino] = Canivete.getElementByDataAttribute([
+      "navbar",
+      `${dataDestino}`,
+    ]);
+    let navbarHeight = Canivete.elementHeight(navbar);
+    let y = Canivete.elementY(divDestino) - navbarHeight;
     window.scroll({
       top: y,
       behavior: "smooth",
