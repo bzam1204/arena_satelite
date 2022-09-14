@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import poster from "../../assets/img/poster.png";
 
 const TorneiosAbertos = styled.section`
@@ -10,8 +11,7 @@ const TorneiosAbertos = styled.section`
   height: fit-content;
   padding: 4.44vw 0 0;
   width: 100vw;
-  background-color:#fff;
-
+  background-color: #fff;
 `;
 const Title = styled.h2`
   color: #333333;
@@ -53,17 +53,23 @@ const Item = styled.li``;
 // eslint-disable-next-line import/no-anonymous-default-export
 export default function () {
   return (
-    <TorneiosAbertos data-torneios_abertos >
+    <TorneiosAbertos data-torneios_abertos>
       <Title>Torneios Abertos</Title>
       <Itens>
         <Item>
-          <Poster></Poster>
+          <Link to={"/torneio"}>
+            <Poster></Poster>
+          </Link>
         </Item>
         <Item>
-          <Poster></Poster>
+          <Link to={"/torneio"}>
+            <Poster></Poster>
+          </Link>
         </Item>
         <Item>
-          <Poster></Poster>
+          <Link to={"/torneio"}>
+            <Poster></Poster>
+          </Link>
         </Item>
       </Itens>
     </TorneiosAbertos>

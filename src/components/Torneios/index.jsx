@@ -3,6 +3,8 @@ import styled from "styled-components";
 import backBtn from "../../assets/img/backArrow.svg";
 import poster from "../../assets/img/poster.png";
 import { Link } from "react-router-dom";
+import Info from "../Info";
+import ScrollToTop from "../ScrolToTop";
 
 const Torneio = styled.main`
   align-items: center;
@@ -19,28 +21,28 @@ const BgPoster = styled.div`
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 0px 0px 0px 170px;
-  height: 280px;
-  width: 360px;
+  border-radius: 0px 0px 0px 47.22vw;
+  height: 77.77vw;
+  width: 100%;
 `;
 
-const BackBtn = styled.div`
-  background-image: url(${backBtn});
-  background-repeat: no-repeat;
-  background-size: cover;
-  border: 16px solid transparent;
-  height: 32px;
-  width: 32px;
+const BackBtn = styled.img`
+  position: fixed;
+  padding: 4.44vw;
+  border-radius: 50vw;
+  height: 8.88vw;
+  width: 8.88vw;
 `;
 
 const Title = styled.h2`
+  margin-top: 4.44vw;
   width: fit-content;
   height: fit-content;
   font-family: quicksand;
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 50px;
+  font-size: 11.11vw;
+  line-height: 13.88vw;
   text-align: center;
   color: #333333;
 `;
@@ -48,14 +50,16 @@ const Title = styled.h2`
 export default function Torneios() {
   return (
     <Torneio>
+      <ScrollToTop />
       <Cabecalho>
-        <BgPoster>
-          <Link to={"/"}>
-            <BackBtn></BackBtn>
-          </Link>
-        </BgPoster>
+        <Link to={"/"}>
+          {" "}
+          <BackBtn src={backBtn}></BackBtn>
+        </Link>
+        <BgPoster></BgPoster>
         <Title>V Torneio de Futevôlei Arena Satélite</Title>
       </Cabecalho>
+      <Info></Info>
     </Torneio>
   );
 }
