@@ -38,8 +38,7 @@ const Title = styled.h2`
   margin-top: 4.44vw;
   width: fit-content;
   height: fit-content;
-  font-family: quicksand;
-  font-style: normal;
+  font-family: 'Quicksand', sans-serif;  font-style: normal;
   font-weight: 700;
   font-size: 11.11vw;
   line-height: 13.88vw;

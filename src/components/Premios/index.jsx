@@ -7,8 +7,7 @@ const PrideBrackets = styled.div`
   color: #333333;
   display: flex;
   flex-direction: row;
-  font-family: quicksand;
-  font-size: 6.66vw;
+  font-family: 'Quicksand', sans-serif;  font-size: 6.66vw;
   font-style: normal;
   font-weight: 600;
   height: 12.77;

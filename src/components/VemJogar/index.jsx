@@ -19,7 +19,7 @@ const Title = styled.h2`
   align-items: center;
   color: #333333;
   display: flex;
-  font-family: quicksand;
+  font-family: 'Quicksand';
   font-size: 13.33vw;
   font-style: normal;
   font-weight: 600;
@@ -39,7 +39,7 @@ const FotoArena = styled.div`
 
 const TextWhats = styled.p`
   color: #333333;
-  font-family: quicksand;
+  font-family: 'Quicksand';
   font-size: 6.66vw;
   font-style: normal;
   font-weight: 500;
@@ -68,7 +68,7 @@ const Botao = styled.button`
 
 const Texto = styled.p`
   color: #333333;
-  font-family: quicksand;
+  font-family: 'Quicksand';
   font-size: 6.66vw;
   font-style: normal;
   font-size: 500;
@@ -100,7 +100,7 @@ const Endereco = styled.p`
   align-items: center;
   color: #333333;
   display: flex;
-  font-family: quicksand;
+  font-family: 'Quicksand';
   font-size: 6.66vw;
   font-style: normal;
   font-weight: 500;
@@ -114,7 +114,7 @@ const Contato = styled.p`
   align-items: center;
   color: #333333;
   display: flex;
-  font-family: quicksand;
+  font-family: 'Quicksand', sans-serif;
   font-size: 6.66vw;
   font-style: normal;
   font-weight: 500;

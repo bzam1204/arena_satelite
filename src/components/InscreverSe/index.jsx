@@ -20,8 +20,7 @@ const Icon = styled.img`
   height: 6.66vw;
 `;
 const Text = styled.p`
-  font-family: quicksand;
-  font-size: 6.66vw;
+font-family: 'Quicksand', sans-serif;  font-size: 6.66vw;
   font-style: normal;
   font-weight: 500;
   height: 8.33vw;

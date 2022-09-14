@@ -59,8 +59,7 @@ const Icone = styled.img`
 `;
 
 const Nome = styled.p`
-  font-family: quicksand;
-  font-style: normal;
+font-family: 'Quicksand', sans-serif;  font-style: normal;
   font-weight: 500;
   padding: 0;
   margin: 0;

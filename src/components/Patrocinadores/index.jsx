@@ -17,8 +17,7 @@ const Title = styled.h2`
   width: fit-content;
   height: fit-content;
 
-  font-family: quicksand;
-  font-style: normal;
+  font-family: 'Quicksand', sans-serif;  font-style: normal;
   font-weight: 600;
   font-size: 8.88vw;
   line-height: 11.11vw;
@@ -77,8 +76,7 @@ const Nome = styled.h3`
   width: 57.77vw;
   height: 8.33vw;
 
-  font-family: "Quicksand";
-  font-style: normal;
+  font-family: 'Quicksand', sans-serif;  font-style: normal;
   font-weight: 500;
   font-size: 6.66vw;
   line-height: 8.33vw;

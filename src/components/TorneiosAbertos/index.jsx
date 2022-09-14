@@ -15,8 +15,7 @@ const TorneiosAbertos = styled.section`
 `;
 const Title = styled.h2`
   color: #333333;
-  font-family: quicksand;
-  font-size: 8.88vw;
+  font-family: 'Quicksand', sans-serif;  font-size: 8.88vw;
   font-style: normal;
   font-weight: 600;
   height: fit-content;

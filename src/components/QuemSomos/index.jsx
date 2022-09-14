@@ -6,10 +6,10 @@ const QuemSomos = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding:  0px;
+  padding: 0px;
   gap: 4.44vw;
   width: calc(100vw);
-  background-color:#fff;
+  background-color: #fff;
 
   height: fit-content;
 `;
@@ -37,7 +37,7 @@ const Title = styled.h2`
   width: fit-content;
   height: fit-content;
 
-  font-family: quicksand;
+  font-family: "Quicksand", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 8.88vw;
@@ -51,7 +51,7 @@ const Title = styled.h2`
 const Paragraph = styled.p`
   width: 91.11vw;
   height: fit-content;
-  font-family: quicksand;
+  font-family: "Quicksand", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 6.66vw;
