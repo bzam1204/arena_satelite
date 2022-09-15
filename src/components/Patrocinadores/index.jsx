@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import softgate from "../../assets/img/Slogo.svg";
+import hbEletronica from "../../assets/img/hbLogo.png";
+import { ItensPD, SectionTitle } from "../UI";
 import Cores from "../UI/Cores";
 
 const Patrocinadores = styled.section`
@@ -13,33 +15,8 @@ const Patrocinadores = styled.section`
   height: fit-content;
 `;
 
-const Title = styled.h2`
-  width: fit-content;
-  height: fit-content;
-  font-family: "Quicksand", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 8.88vw;
-  line-height: 11.11vw;
-  /* identical to box height */
-
-  text-align: center;
-
-  color: ${Cores.cinzaEscuro};
-`;
-
-const Itens = styled.ul`
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 4.44vw 0 0 4.44vw;
-  gap: 4.44vw;
-  width: calc(100% - 4.44vw);
-  height: fit-content;
-  overflow-x: scroll;
-  &::-webkit-scrollbar {
-    border: none;
-  }
+const Itens = styled(ItensPD)`
+  padding: 4.44vw 0 8.88vw 4.44vw;
 `;
 
 const Item = styled.li`
@@ -48,15 +25,11 @@ const Item = styled.li`
   align-items: center;
   padding: 0px;
   gap: 2.22vw;
-
   width: fit-content;
   height: fit-content;
 `;
 
-const Logo = styled.div`
-  background-image: url(${softgate});
-  background-repeat: no-repeat;
-  background-size: cover;
+const Logo = styled.img`
   border: 8.88vw solid ${Cores.branco};
   display: flex;
   flex-direction: row;
@@ -71,16 +44,12 @@ const Logo = styled.div`
 const Nome = styled.h3`
   width: 57.77vw;
   height: 8.33vw;
-
   font-family: "Quicksand", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 6.66vw;
   line-height: 8.33vw;
-  /* identical to box height */
-
   text-align: center;
-
   color: ${Cores.cinzaEscuro};
 `;
 
@@ -88,18 +57,18 @@ const Nome = styled.h3`
 export default function () {
   return (
     <Patrocinadores data-patrocinadores>
-      <Title>Patrocinadores</Title>
+      <SectionTitle>Patrocinadores</SectionTitle>
       <Itens>
         <Item>
-          <Logo></Logo>
+          <Logo src={softgate} ></Logo>
           <Nome>Softgate</Nome>
         </Item>
         <Item>
-          <Logo></Logo>
-          <Nome>Softgate</Nome>
+          <Logo src={hbEletronica} ></Logo>
+          <Nome>hbEletrônica</Nome>
         </Item>
         <Item>
-          <Logo></Logo>
+          <Logo src={softgate} ></Logo>
           <Nome>Softgate</Nome>
         </Item>
       </Itens>

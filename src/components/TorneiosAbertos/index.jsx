@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import naoHaTorneios from "../../assets/img/naoHaTorneios.png";
 import poster from "../../assets/img/poster.png";
 import Cores from "../UI/Cores";
+import { SectionTitle, ItensPD } from "../UI";
 
 const TorneiosAbertos = styled.section`
   align-items: center;
@@ -14,32 +15,6 @@ const TorneiosAbertos = styled.section`
   padding: 4.44vw 0 0;
   width: 100vw;
   background-color: ${Cores.branco};
-`;
-const Title = styled.h2`
-  color: ${Cores.cinzaEscuro};
-  font-family: "Quicksand", sans-serif;
-  font-size: 8.88vw;
-  font-style: normal;
-  font-weight: 600;
-  height: fit-content;
-  line-height: 11.11vw;
-  text-align: center;
-  width: fit-content;
-`;
-
-const Itens = styled.ul`
-  align-items: flex-start;
-  display: flex;
-  flex-direction: row;
-  gap: 4.44vw;
-  height: fit-content;
-  overflow-x: scroll;
-  padding: 8.88vw 0 11.88vw 4.44vw;
-  width: calc(100% - 4.44vw);
-
-  &::-webkit-scrollbar {
-    height: 0;
-  }
 `;
 
 const Poster = styled.img`
@@ -54,8 +29,8 @@ const Item = styled.li``;
 export default function () {
   return (
     <TorneiosAbertos data-torneios_abertos>
-      <Title>Torneios Abertos</Title>
-      <Itens>
+      <SectionTitle>Torneios Abertos</SectionTitle>
+      <ItensPD>
         <Item>
           <Link to={"/"}>
             <Poster src={naoHaTorneios}></Poster>
@@ -66,7 +41,7 @@ export default function () {
             <Poster src={poster}></Poster>
           </Link>
         </Item>
-      </Itens>
+      </ItensPD>
     </TorneiosAbertos>
   );
 }

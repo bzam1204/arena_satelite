@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { ItensPD } from "../UI";
 import Cores from "../UI/Cores";
 
 const Requisitos = styled.section`
@@ -30,12 +31,10 @@ const Subtitle = styled.div`
   padding: 2.22vw;
   width: calc(100% - 4.44vw);
 `;
-const Itens = styled.ul`
+const Itens = styled(ItensPD)`
   align-items: center;
-  display: flex;
   flex-direction: column;
   gap: 6.66vw;
-  height: fit-content;
   padding: 0px 4.44vw;
   width: calc(100% - 8.88vw);
 `;

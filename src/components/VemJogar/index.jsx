@@ -3,6 +3,7 @@ import styled from "styled-components";
 import fotoArena from "../../assets/img/fotoArena.png";
 import whatsIcon from "../../assets/img/whatsLogo.svg";
 import Maps from "../Maps";
+import { ParagraphPD, SectionTitle } from "../UI";
 import Cores from "../UI/Cores";
 
 const VemJogar = styled.section`
@@ -16,15 +17,9 @@ const VemJogar = styled.section`
   background-color: ${Cores.branco};
 `;
 
-const Title = styled.h2`
-  align-items: center;
-  color: ${Cores.cinzaEscuro};
-  display: flex;
-  font-family: "Quicksand";
+const Title = styled(SectionTitle)`
   font-size: 13.33vw;
-  font-style: normal;
   font-weight: 600;
-  height: fit-content;
   line-height: 16.66vw;
   width: 91.11vw;
 `;
@@ -38,17 +33,9 @@ const FotoArena = styled.div`
   width: 91.11vw;
 `;
 
-const TextWhats = styled.p`
-  color: ${Cores.cinzaEscuro};
-  font-family: "Quicksand";
-  font-size: 6.66vw;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 8.33vw;
-  text-align: justify;
+const TextWhats = styled(ParagraphPD)`
   text-indent: 4.44vw;
   width: 91.11vw;
-  height: fit-content;
 `;
 
 const Botao = styled.button`
@@ -67,17 +54,7 @@ const Botao = styled.button`
   width: calc(100% - 11.5vw);
 `;
 
-const Texto = styled.p`
-  color: ${Cores.cinzaEscuro};
-  font-family: "Quicksand";
-  font-size: 6.66vw;
-  font-style: normal;
-  font-size: 500;
-  text-align: justify;
-  height: fit-content;
-  line-height: 8.33vw;
-  text-indent: 6.66vw;
-  width: fit-content;
+const Texto = styled(ParagraphPD)`
   white-space: nowrap;
 `;
 
@@ -97,33 +74,11 @@ const ContainerEnderecoContato = styled.div`
   width: 91.11vw;
 `;
 
-const Endereco = styled.p`
-  align-items: center;
-  color: ${Cores.cinzaEscuro};
-  display: flex;
-  font-family: "Quicksand";
-  font-size: 6.66vw;
-  font-style: normal;
-  font-weight: 500;
-  height: fit-content;
-  line-height: 8.33vw;
+const Endereco = styled(ParagraphPD)`
   text-align: center;
-  width: fit-content;
 `;
 
-const Contato = styled.p`
-  align-items: center;
-  color: ${Cores.cinzaEscuro};
-  display: flex;
-  font-family: "Quicksand", sans-serif;
-  font-size: 6.66vw;
-  font-style: normal;
-  font-weight: 500;
-  height: fit-content;
-  line-height: 8.33vw;
-  text-align: center;
-  width: fit-content;
-`;
+const Contato = styled(ParagraphPD)``;
 
 const Negrito = styled.strong`
   font-weight: bold;

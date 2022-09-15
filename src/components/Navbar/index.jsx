@@ -8,6 +8,7 @@ import quemSomosIcon from "../../assets/img/quemSomosIcon.svg";
 import navbarClickAndScroll from "../../js/navbarClickAndScroll";
 import fixNavbar from "../../js/fixNavbar";
 import Cores from "../UI/Cores";
+import { ItensPD } from "../UI";
 
 const Navbar = styled.nav`
   position: initial;
@@ -17,26 +18,10 @@ const Navbar = styled.nav`
   background-color: ${Cores.branco};
 `;
 
-const Itens = styled.li`
+const Itens = styled(ItensPD)`
   padding: 0 4.44vw;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   gap: 2.22vw;
   width: 91.22vw;
-  height: fit-content;
-  overflow-x: scroll;
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0;
-  scrollbar-color: transparent;
-
-  &::-webkit-scrollbar {
-    height: 0;
-  }
-  scrollbar-color: ${Cores.branco} green;
-  scrollbar-width: 0px;
 `;
 
 const Item = styled.li`

@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import CardCampeao from "../CardCampeao";
+import { SectionTitle } from "../UI";
 import Cores from "../UI/Cores";
 
 const Campeoes = styled.section`
@@ -12,17 +13,6 @@ const Campeoes = styled.section`
   gap: 8.88vw;
   background-color: ${Cores.branco};
   width: 100vw;
-`;
-
-const Title = styled.h2`
-  width: fit-content;
-  height: fit-content;
-  font-family: 'Quicksand';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 8.88vw;
-  line-height: 11.11vw;
-  color: ${Cores.cinzaEscuro};
 `;
 
 const Itens = styled.ul`
@@ -46,7 +36,7 @@ const Itens = styled.ul`
 export default function () {
   return (
     <Campeoes data-campeoes>
-      <Title data-campeoes_title>Campeões</Title>
+      <SectionTitle data-campeoes_title>Campeões</SectionTitle>
       <Itens>
         <CardCampeao />
         <CardCampeao />

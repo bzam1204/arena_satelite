@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import fotoGrupo from "../../assets/img/fotoGrupo.png";
+import { SectionTitle } from "../UI";
 import Cores from "../UI/Cores";
 
 const QuemSomos = styled.section`
@@ -34,21 +35,6 @@ const Texto = styled.div`
   height: fit-content;
 `;
 
-const Title = styled.h2`
-  width: fit-content;
-  height: fit-content;
-
-  font-family: "Quicksand", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 8.88vw;
-  line-height: 11.11vw;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: ${Cores.cinzaEscuro};
-`;
-
 const Paragraph = styled.p`
   width: 91.11vw;
   height: fit-content;
@@ -69,7 +55,7 @@ export default function () {
     <QuemSomos data-quem_somos>
       <FotoGrupo></FotoGrupo>
       <Texto>
-        <Title>Quem Somos</Title>
+        <SectionTitle>Quem Somos</SectionTitle>
         <Paragraph>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla
           suscipit, dicta blanditiis ea quae obcaecati pariatur neque. Tenetur
