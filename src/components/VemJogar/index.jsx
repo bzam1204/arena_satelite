@@ -3,6 +3,7 @@ import styled from "styled-components";
 import fotoArena from "../../assets/img/fotoArena.png";
 import whatsIcon from "../../assets/img/whatsLogo.svg";
 import Maps from "../Maps";
+import Cores from "../UI/Cores";
 
 const VemJogar = styled.section`
   align-items: center;
@@ -12,14 +13,14 @@ const VemJogar = styled.section`
   height: fit-content;
   padding: 4.44vw 0;
   width: 100vw;
-  background-color: #fff;
+  background-color: ${Cores.branco};
 `;
 
 const Title = styled.h2`
   align-items: center;
-  color: #333333;
+  color: ${Cores.cinzaEscuro};
   display: flex;
-  font-family: 'Quicksand';
+  font-family: "Quicksand";
   font-size: 13.33vw;
   font-style: normal;
   font-weight: 600;
@@ -32,14 +33,14 @@ const FotoArena = styled.div`
   background: url(${fotoArena}) no-repeat;
   background-size: cover;
   border-radius: 1.38vw;
-  filter: drop-shadow(2.77vw 2.77vw 5.55vw rgba(0, 0, 0, 0.16));
+  filter: drop-shadow(2.77vw 2.77vw 5.55vw ${Cores.shadow});
   height: 60vw;
   width: 91.11vw;
 `;
 
 const TextWhats = styled.p`
-  color: #333333;
-  font-family: 'Quicksand';
+  color: ${Cores.cinzaEscuro};
+  font-family: "Quicksand";
   font-size: 6.66vw;
   font-style: normal;
   font-weight: 500;
@@ -52,9 +53,9 @@ const TextWhats = styled.p`
 
 const Botao = styled.button`
   align-items: center;
-  background: #feea90;
+  background: ${Cores.amarelo};
   border-radius: 1.38vw;
-  box-shadow: 2.77vw 2.77vw 5.55vw rgba(0, 0, 0, 0.16);
+  box-shadow: 2.77vw 2.77vw 5.55vw ${Cores.shadow};
   display: flex;
   flex-direction: row;
   outline: none;
@@ -67,8 +68,8 @@ const Botao = styled.button`
 `;
 
 const Texto = styled.p`
-  color: #333333;
-  font-family: 'Quicksand';
+  color: ${Cores.cinzaEscuro};
+  font-family: "Quicksand";
   font-size: 6.66vw;
   font-style: normal;
   font-size: 500;
@@ -98,9 +99,9 @@ const ContainerEnderecoContato = styled.div`
 
 const Endereco = styled.p`
   align-items: center;
-  color: #333333;
+  color: ${Cores.cinzaEscuro};
   display: flex;
-  font-family: 'Quicksand';
+  font-family: "Quicksand";
   font-size: 6.66vw;
   font-style: normal;
   font-weight: 500;
@@ -112,9 +113,9 @@ const Endereco = styled.p`
 
 const Contato = styled.p`
   align-items: center;
-  color: #333333;
+  color: ${Cores.cinzaEscuro};
   display: flex;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 6.66vw;
   font-style: normal;
   font-weight: 500;
