@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import CardCampeao from "../CardCampeao";
+import Cores from "../UI/Cores";
 
 const Campeoes = styled.section`
   height: fit-content;
@@ -9,20 +10,19 @@ const Campeoes = styled.section`
   justify-content: center;
   align-items: center;
   gap: 8.88vw;
-  background-color:#fff;
+  background-color: ${Cores.branco};
   width: 100vw;
 `;
 
 const Title = styled.h2`
   width: fit-content;
   height: fit-content;
-
-  font-family: quicksand;
+  font-family: 'Quicksand';
   font-style: normal;
   font-weight: 600;
   font-size: 8.88vw;
   line-height: 11.11vw;
-  color: #333333;
+  color: ${Cores.cinzaEscuro};
 `;
 
 const Itens = styled.ul`
@@ -38,7 +38,7 @@ const Itens = styled.ul`
   overflow-x: scroll;
 
   &::-webkit-scrollbar {
-    border: none;
+    height: 0;
   }
 `;
 

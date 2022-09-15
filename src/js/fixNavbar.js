@@ -1,3 +1,4 @@
+import Cores from "../components/UI/Cores";
 import Canivete from "./Canivete";
 
 export default function fixNavbar() {
@@ -17,9 +18,9 @@ const yMaiorQueNavbar = (navbar, campeoes) => {
       if (navbar.style.position !== "fixed") {
         campeoesMarginUp(campeoes, Canivete.elementHeight(navbar));
         navbar.style.position = "fixed";
-        navbar.style.background = "none";
-        navbar.style.backdropFilter = "blur(10px)";
-        navbar.style.boxShadow = "2.7vw 2.7vw 5.5vw rgba(0, 0, 0, 0.16)";
+        navbar.style.background = `${Cores.poscaBranco}`;
+        // navbar.style.backdropFilter = "blur(10px)";
+        navbar.style.boxShadow = `2.7vw 2.7vw 5.5vw ${Cores.shadow}`;
       }
     }
   });

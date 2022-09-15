@@ -1,7 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import naoHaTorneios from "../../assets/img/naoHaTorneios.png";
 import poster from "../../assets/img/poster.png";
+import Cores from "../UI/Cores";
 
 const TorneiosAbertos = styled.section`
   align-items: center;
@@ -11,11 +13,12 @@ const TorneiosAbertos = styled.section`
   height: fit-content;
   padding: 4.44vw 0 0;
   width: 100vw;
-  background-color: #fff;
+  background-color: ${Cores.branco};
 `;
 const Title = styled.h2`
-  color: #333333;
-  font-family: 'Quicksand', sans-serif;  font-size: 8.88vw;
+  color: ${Cores.cinzaEscuro};
+  font-family: "Quicksand", sans-serif;
+  font-size: 8.88vw;
   font-style: normal;
   font-weight: 600;
   height: fit-content;
@@ -35,15 +38,13 @@ const Itens = styled.ul`
   width: calc(100% - 4.44vw);
 
   &::-webkit-scrollbar {
-    border: none;
+    height: 0;
   }
 `;
 
-const Poster = styled.div`
-  background: url(${poster}) no-repeat;
-  background-size: cover;
+const Poster = styled.img`
   border-radius: 1.38vw;
-  filter: drop-shadow(2.77vw 2.77vw 5.55vw rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(2.77vw 2.77vw 5.55vw ${Cores.shadow});
   height: 122.22vw;
   width: 88.11vw;
 `;
@@ -56,18 +57,13 @@ export default function () {
       <Title>Torneios Abertos</Title>
       <Itens>
         <Item>
-          <Link to={"/torneio"}>
-            <Poster></Poster>
+          <Link to={"/"}>
+            <Poster src={naoHaTorneios}></Poster>
           </Link>
         </Item>
         <Item>
           <Link to={"/torneio"}>
-            <Poster></Poster>
-          </Link>
-        </Item>
-        <Item>
-          <Link to={"/torneio"}>
-            <Poster></Poster>
+            <Poster src={poster}></Poster>
           </Link>
         </Item>
       </Itens>

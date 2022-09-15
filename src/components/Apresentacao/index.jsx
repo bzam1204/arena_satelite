@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import logoArenaSatelite from "../../assets/img/logo.png";
+import Cores from "../UI/Cores";
 import VideoDemo from "../VideoDemo";
 
 const Apresentacao = styled.div`
@@ -62,14 +63,7 @@ const NoSomos = styled.div`
   font-weight: lighter;
   font-size: 8.88vw;
   line-height: 12.2vw;
-  /* identical to box height */
-
-  color: rgba(255, 255, 255, 0.83);
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 0;
+  color: ${Cores.brancoQuase};
 `;
 
 const ArenaSatelite = styled.div`
@@ -80,10 +74,7 @@ const ArenaSatelite = styled.div`
   font-weight: 700;
   font-size: 13.3vw;
   line-height: 18vw;
-  color: #ffffff;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
+  color: ${Cores.branco};
 `;
 // eslint-disable-next-line import/no-anonymous-default-export
 export default function () {

@@ -1,14 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import softgate from "../../assets/img/Slogo.svg";
+import Cores from "../UI/Cores";
 
 const Patrocinadores = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 11.11vw;
-  background-color:#fff;
-
+  background-color: ${Cores.branco};
   width: 100vw;
   height: fit-content;
 `;
@@ -16,8 +16,8 @@ const Patrocinadores = styled.section`
 const Title = styled.h2`
   width: fit-content;
   height: fit-content;
-
-  font-family: 'Quicksand', sans-serif;  font-style: normal;
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
   font-weight: 600;
   font-size: 8.88vw;
   line-height: 11.11vw;
@@ -25,7 +25,7 @@ const Title = styled.h2`
 
   text-align: center;
 
-  color: #333333;
+  color: ${Cores.cinzaEscuro};
 `;
 
 const Itens = styled.ul`
@@ -57,18 +57,14 @@ const Logo = styled.div`
   background-image: url(${softgate});
   background-repeat: no-repeat;
   background-size: cover;
-  border: 8.88vw solid #fff;
-
+  border: 8.88vw solid ${Cores.branco};
   display: flex;
-
   flex-direction: row;
   justify-content: center;
   align-items: center;
-
   width: 40vw;
   height: 40vw;
-
-  box-shadow: 2.77vw 2.77vw 5.55vw rgba(0, 0, 0, 0.16);
+  box-shadow: 2.77vw 2.77vw 5.55vw ${Cores.shadow};
   border-radius: 100vw;
 `;
 
@@ -76,7 +72,8 @@ const Nome = styled.h3`
   width: 57.77vw;
   height: 8.33vw;
 
-  font-family: 'Quicksand', sans-serif;  font-style: normal;
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
   font-weight: 500;
   font-size: 6.66vw;
   line-height: 8.33vw;
@@ -84,7 +81,7 @@ const Nome = styled.h3`
 
   text-align: center;
 
-  color: #333333;
+  color: ${Cores.cinzaEscuro};
 `;
 
 // eslint-disable-next-line import/no-anonymous-default-export

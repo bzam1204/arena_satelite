@@ -1,17 +1,16 @@
 import styled from "styled-components";
 import fotoDupla from "../../assets/img/campeoesEx.png";
+import Cores from "../UI/Cores";
 
 const CardCampeao = styled.li`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
-
   width: 80vw;
   height: 95.27vw;
-
-  background: #b4fef9;
-  box-shadow: 2.7vw 2.7vw 5.5vw rgba(0, 0, 0, 0.16);
+  background: ${Cores.amarelo};
+  box-shadow: 2.7vw 2.7vw 5.5vw ${Cores.shadow};
   border-radius: 1.38vw;
 `;
 
@@ -36,14 +35,13 @@ const Info = styled.div`
 const Posicao = styled.h3`
   width: fit-content;
   height: fit-content;
-
-  font-family: quicksand;
+  font-family: "Quicksand";
   font-style: normal;
   font-weight: 500;
   font-size: 11.66vw;
   line-height: 14.16vw;
 
-  color: #333333;
+  color: ${Cores.cinzaEscuro};
 `;
 
 const TorneioNome = styled.h3`
@@ -59,7 +57,7 @@ const TorneioNome = styled.h3`
   line-height: 6.11vw;
   /* identical to box height */
 
-  color: #333333;
+  color: ${Cores.cinzaEscuro};
 `;
 
 const Categoria = styled.h3`
@@ -72,7 +70,7 @@ const Categoria = styled.h3`
   font-size: 4.44vw;
   line-height: 6.11vw;
   /* identical to box height */
-  color: #333333;
+  color: ${Cores.cinzaEscuro};
 `;
 
 // eslint-disable-next-line import/no-anonymous-default-export

@@ -5,6 +5,7 @@ import poster from "../../assets/img/poster.png";
 import { Link } from "react-router-dom";
 import Info from "../Info";
 import ScrollToTop from "../ScrolToTop";
+import Cores from "../UI/Cores";
 
 const Torneio = styled.main`
   align-items: center;
@@ -38,12 +39,13 @@ const Title = styled.h2`
   margin-top: 4.44vw;
   width: fit-content;
   height: fit-content;
-  font-family: 'Quicksand', sans-serif;  font-style: normal;
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
   font-weight: 700;
   font-size: 11.11vw;
   line-height: 13.88vw;
   text-align: center;
-  color: #333333;
+  color: ${Cores.cinzaEscuro};
 `;
 
 export default function Torneios() {

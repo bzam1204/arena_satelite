@@ -7,13 +7,14 @@ import facaParteIcon from "../../assets/img/facaParteIcon.svg";
 import quemSomosIcon from "../../assets/img/quemSomosIcon.svg";
 import navbarClickAndScroll from "../../js/navbarClickAndScroll";
 import fixNavbar from "../../js/fixNavbar";
+import Cores from "../UI/Cores";
 
 const Navbar = styled.nav`
   position: initial;
   z-index: 10;
   padding: 2.22vw 0;
   transition: all 0.4s;
-  background-color: #fff;
+  background-color: ${Cores.branco};
 `;
 
 const Itens = styled.li`
@@ -34,7 +35,7 @@ const Itens = styled.li`
   &::-webkit-scrollbar {
     height: 0;
   }
-  scrollbar-color: #e6e6e6 green;
+  scrollbar-color: ${Cores.branco} green;
   scrollbar-width: 0px;
 `;
 
@@ -49,7 +50,7 @@ const Item = styled.li`
   width: fit-content;
   height: fit-content;
 
-  background: #feea90;
+  background: ${Cores.amarelo};
   border-radius: 50vw;
 `;
 
@@ -59,14 +60,15 @@ const Icone = styled.img`
 `;
 
 const Nome = styled.p`
-font-family: 'Quicksand', sans-serif;  font-style: normal;
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
   font-weight: 500;
   padding: 0;
   margin: 0;
   width: fit-content;
   font-size: 4.44vw;
   line-height: 5.55vw;
-  color: #333333;
+  color: ${Cores.cinzaEscuro};
   white-space: nowrap;
 `;
 
@@ -80,23 +82,23 @@ export default function () {
   return (
     <Navbar data-navbar>
       <Itens>
-        <Item data-navbar_torneio>
+        <Item navbar_item data-navbar_torneio>
           <Icone src={torneioIcon} />{" "}
           <Nome className="naoSelecionavel">Torneios Abertos</Nome>
         </Item>
-        <Item data-navbar_campeoes>
+        <Item navbar_item data-navbar_campeoes>
           <Icone src={trophyIcon} />{" "}
           <Nome className="naoSelecionavel">Campeões</Nome>
         </Item>
-        <Item data-navbar_patrocinadores>
+        <Item navbar_item data-navbar_patrocinadores>
           <Icone src={handshakeIcon} />{" "}
           <Nome className="naoSelecionavel">Patrocinadores</Nome>
         </Item>
-        <Item data-navbar_faca_parte>
+        <Item navbar_item data-navbar_faca_parte>
           <Icone src={facaParteIcon} />{" "}
           <Nome className="naoSelecionavel">Faça Parte</Nome>
         </Item>
-        <Item data-navbar_quem_somos>
+        <Item navbar_item data-navbar_quem_somos>
           <Icone src={quemSomosIcon} />{" "}
           <Nome className="naoSelecionavel">Quem Somos</Nome>
         </Item>

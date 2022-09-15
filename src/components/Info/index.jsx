@@ -4,11 +4,12 @@ import Cronograma from "../Cronograma";
 import InscreverSe from "../InscreverSe";
 import Premios from "../Premios";
 import Requisitos from "../Requisitos";
+import Cores from "../UI/Cores";
 
 const PrideBrackets = styled.div`
   align-items: center;
   border-radius: 1.38vw;
-  color: #333333;
+  color: ${Cores.cinzaEscuro};
   display: flex;
   flex-direction: row;
   font-family: 'Quicksand', sans-serif;  font-size: 6.66vw;

@@ -1,13 +1,15 @@
 import React from "react";
 import styled from "styled-components";
+import Cores from "../UI/Cores";
 
 const PrideBrackets = styled.div`
   align-items: center;
   border-radius: 1.38vw;
-  color: #333333;
+  color: ${Cores.cinzaEscuro};
   display: flex;
   flex-direction: row;
-  font-family: 'Quicksand', sans-serif;  font-size: 6.66vw;
+  font-family: "Quicksand", sans-serif;
+  font-size: 6.66vw;
   font-style: normal;
   font-weight: 600;
   height: 12.77;
@@ -18,9 +20,9 @@ const PrideBrackets = styled.div`
 `;
 const Premios = styled.div`
   align-items: center;
-  background: #fdfdfd;
+  background: ${Cores.poscaBranco};
   border-radius: 1.38vw;
-  box-shadow: 2.77vw 2.77vw 5.55vw rgba(0, 0, 0, 0.16);
+  box-shadow: 2.77vw 2.77vw 5.55vw ${Cores.shadow};
   display: flex;
   flex-direction: column;
   gap: 4.44vw;
@@ -30,9 +32,9 @@ const Premios = styled.div`
 `;
 const Subtitle = styled.div`
   align-items: flex-start;
-  background: #b4fef9;
+  background: ${Cores.amarelo};
   border-radius: 1.38vw 1.38vw 0px 0px;
-  color: #333333;
+  color: ${Cores.cinzaEscuro};
   display: flex;
   flex-direction: row;
   font-size: 8.88vw;
@@ -56,16 +58,16 @@ const Itens = styled.ul`
 const Item = styled.li``;
 
 const First = styled(PrideBrackets)`
-  background: rgba(255, 215, 0, 0.5);
+  background: ${Cores.ouro};
 `;
 const Second = styled(PrideBrackets)`
-  background: rgba(192, 192, 192, 0.5);
+  background: ${Cores.prata};
 `;
 const Third = styled(PrideBrackets)`
-  background: rgba(226, 128, 30, 0.5);
+  background: ${Cores.bronze};
 `;
 const FourthAhead = styled(PrideBrackets)`
-  background: rgba(58, 226, 30, 0.32);
+  background: ${Cores.cinzaClaro};
 `;
 
 // eslint-disable-next-line import/no-anonymous-default-export

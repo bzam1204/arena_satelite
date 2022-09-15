@@ -1,11 +1,12 @@
 import React from "react";
 import styled from "styled-components";
+import Cores from "../UI/Cores";
 
 const Requisitos = styled.section`
   align-items: center;
-  background: #fdfdfd;
+  background: ${Cores.brancoQuase};
   border-radius: 1.38vw;
-  box-shadow: 2.77vw 2.77vw 5.55vw rgba(0, 0, 0, 0.16);
+  box-shadow: 2.77vw 2.77vw 5.55vw ${Cores.shadow};
   display: flex;
   flex-direction: column;
   gap: 4.44vw;
@@ -15,9 +16,9 @@ const Requisitos = styled.section`
 `;
 const Subtitle = styled.div`
   align-items: flex-start;
-  background: #b4fef9;
+  background: ${Cores.amarelo};
   border-radius: 1.38vw 1.38vw 0px 0px;
-  color: #333333;
+  color: ${Cores.cinzaEscuro};
   display: flex;
   flex-direction: row;
   font-size: 8.88vw;
@@ -50,7 +51,7 @@ const Requisito = styled.p`
   font-weight: 500;
   font-size: 6.66vw;
   line-height: 8.33vw;
-  color: #333333;
+  color: ${Cores.cinzaEscuro};
 `;
 
 // eslint-disable-next-line import/no-anonymous-default-export
@@ -68,7 +69,6 @@ export default function () {
         <Item>
           <Requisito>Pagamento da inscrição</Requisito>
         </Item>
-        
       </Itens>
     </Requisitos>
   );

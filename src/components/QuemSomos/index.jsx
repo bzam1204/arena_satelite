@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import fotoGrupo from "../../assets/img/fotoGrupo.png";
+import Cores from "../UI/Cores";
 
 const QuemSomos = styled.section`
   display: flex;
@@ -9,7 +10,7 @@ const QuemSomos = styled.section`
   padding: 0px;
   gap: 4.44vw;
   width: calc(100vw);
-  background-color: #fff;
+  background-color: ${Cores.branco};
 
   height: fit-content;
 `;
@@ -19,7 +20,7 @@ const FotoGrupo = styled.div`
   background-size: cover;
   width: 91.11vw;
   height: 60vw;
-  filter: drop-shadow(2.77vw 2.77vw 5.55vw rgba(0, 0, 0, 0.16));
+  filter: drop-shadow(2.77vw 2.77vw 5.55vw ${Cores.shadow});
   border-radius: 1.38vw;
 `;
 
@@ -45,7 +46,7 @@ const Title = styled.h2`
   display: flex;
   align-items: center;
   text-align: center;
-  color: #333333;
+  color: ${Cores.cinzaEscuro};
 `;
 
 const Paragraph = styled.p`
@@ -58,7 +59,7 @@ const Paragraph = styled.p`
   line-height: 8.33vw;
   text-align: justify;
   text-indent: 2.22vw;
-  color: #333333;
+  color: ${Cores.cinzaEscuro};
   opacity: 0.8;
 `;
 

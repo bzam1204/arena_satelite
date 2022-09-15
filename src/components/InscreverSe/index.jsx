@@ -1,12 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import inscreverSeImg from "../../assets/img/inscreverSe.svg";
+import Cores from "../UI/Cores";
 
 const InscreverSe = styled.div`
   align-items: center;
-  background: #feea90;
+  background: ${Cores.amarelo};
   border-radius: 5px;
-  box-shadow: 2.77vw 2.77vw 5.55vw rgba(0, 0, 0, 0.16);
+  box-shadow: 2.77vw 2.77vw 5.55vw ${Cores.shadow};
   display: flex;
   flex-direction: row;
   gap: 4.44vw;
@@ -29,10 +30,10 @@ font-family: 'Quicksand', sans-serif;  font-size: 6.66vw;
 `;
 
 const Anchor = styled.a`
-  color: #333;
+  color: ${Cores.cinzaEscuro};
   text-decoration: none;
   &:visited {
-    color: #333;
+    color: ${Cores.cinzaEscuro};
     text-decoration: none;
   }
 `;

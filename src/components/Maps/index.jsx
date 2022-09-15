@@ -1,9 +1,12 @@
 import React from "react";
 import styled from "styled-components";
+import Cores from "../UI/Cores";
 
 const Map = styled.iframe`
   width: 91.11vw;
   height: 68.88vw;
+  box-shadow: 2.77vw 2.77vw 5.55vw ${Cores.shadow};
+  border-radius: 5px;
 `;
 
 // eslint-disable-next-line import/no-anonymous-default-export

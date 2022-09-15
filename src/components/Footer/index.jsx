@@ -4,6 +4,7 @@ import face from "../../assets/img/faceIcon.svg";
 import insta from "../../assets/img/instaIcon.svg";
 import whats from "../../assets/img/whatsLogo.svg";
 import mail from "../../assets/img/mailIcon.svg";
+import Cores from "../UI/Cores";
 
 const Footer = styled.section`
   display: flex;
@@ -13,7 +14,7 @@ const Footer = styled.section`
   gap: 16px;
   width: 100vw;
   height: fit-content;
-  background-color:#fff;
+  background-color: ${Cores.branco};
 `;
 
 const Itens = styled.ul`
@@ -35,7 +36,7 @@ const Item = styled.li`
   padding: 0px;
   width: 13.33vw;
   height: 13.33vw;
-  background: #feea90;
+  background: ${Cores.amarelo};
   border-radius: 30vw;
 `;
 
@@ -70,13 +71,13 @@ const ArenaSatelite = styled.h1`
   display: flex;
   align-items: center;
   text-align: center;
-  color: #333333;
+  color: ${Cores.cinzaEscuro};
 `;
 
 const TodosOsDireitos = styled.p`
   width: fit-content;
   height: fit-content;
-  font-family: quicksand;
+  font-family: "Quicksand";
   font-style: normal;
   font-weight: 500;
   font-size: 4.44vw;
@@ -85,7 +86,7 @@ const TodosOsDireitos = styled.p`
   align-items: center;
   text-align: center;
   text-indent: 2.22vw;
-  color: #333333;
+  color: ${Cores.cinzaEscuro};
 `;
 
 // eslint-disable-next-line import/no-anonymous-default-export
