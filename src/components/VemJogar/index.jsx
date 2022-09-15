@@ -11,7 +11,7 @@ const VemJogar = styled.section`
   flex-direction: column;
   gap: 8.88vw;
   height: fit-content;
-  padding: 4.44vw 0 4.44vw;
+  padding: 4.44vw 0 8.88vw;
   width: 100vw;
   background-color: ${Cores.branco};
 `;
