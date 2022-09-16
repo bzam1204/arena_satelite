@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/arena_satelite/static/css/main.ec090f8b.css",
-    "main.js": "/arena_satelite/static/js/main.3ad6b4ad.js",
+    "main.js": "/arena_satelite/static/js/main.0cd2d828.js",
     "static/media/demo.mp4": "/arena_satelite/static/media/demo.f5b965bd16d649d3c7cb.mp4",
     "static/media/campeoesEx.png": "/arena_satelite/static/media/campeoesEx.078e0781d6f08f5429f5.png",
     "static/media/NotoSans-Bold.ttf": "/arena_satelite/static/media/NotoSans-Bold.23e70cfbbe0783c66804.ttf",
@@ -25,10 +25,10 @@
     "static/media/quemSomosIcon.svg": "/arena_satelite/static/media/quemSomosIcon.5fdfd22d8ddf2a4f7cbaa12f461cd3ba.svg",
     "static/media/mailIcon.svg": "/arena_satelite/static/media/mailIcon.05931dd0091a93c547e81fd4a64916d9.svg",
     "main.ec090f8b.css.map": "/arena_satelite/static/css/main.ec090f8b.css.map",
-    "main.3ad6b4ad.js.map": "/arena_satelite/static/js/main.3ad6b4ad.js.map"
+    "main.0cd2d828.js.map": "/arena_satelite/static/js/main.0cd2d828.js.map"
   },
   "entrypoints": [
     "static/css/main.ec090f8b.css",
-    "static/js/main.3ad6b4ad.js"
+    "static/js/main.0cd2d828.js"
   ]
 }
