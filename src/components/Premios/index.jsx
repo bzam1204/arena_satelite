@@ -1,23 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import Cores from "../UI/Cores";
+import { ItensPD, PrideBrackets, TorneioSectionTitle } from "../UI";
 
-const PrideBrackets = styled.div`
-  align-items: center;
-  border-radius: 1.38vw;
-  color: ${Cores.cinzaEscuro};
-  display: flex;
-  flex-direction: row;
-  font-family: "Quicksand", sans-serif;
-  font-size: 6.66vw;
-  font-style: normal;
-  font-weight: 600;
-  height: 12.77;
-  justify-content: center;
-  line-height: 8.33vw;
-  padding: 2.22vw 4.44vw;
-  width: calc(82.22vw - 8.88vw);
-`;
 const Premios = styled.div`
   align-items: center;
   background: ${Cores.poscaBranco};
@@ -30,28 +15,10 @@ const Premios = styled.div`
   padding: 0px 0px 4.44vw;
   width: 100%;
 `;
-const Subtitle = styled.div`
-  align-items: flex-start;
-  background: ${Cores.amarelo};
-  border-radius: 1.38vw 1.38vw 0px 0px;
-  color: ${Cores.cinzaEscuro};
-  display: flex;
-  flex-direction: row;
-  font-size: 8.88vw;
-  font-style: normal;
-  font-weight: 700;
-  height: fit-content;
-  justify-content: center;
-  line-height: 11.11vw;
-  padding: 2.22vw;
-  width: calc(100% - 4.44vw);
-`;
-const Itens = styled.ul`
-  align-items: center;
-  display: flex;
+
+const Itens = styled(ItensPD)`
   flex-direction: column;
   gap: 6.66vw;
-  height: fit-content;
   padding: 0px 4.44vw;
   width: calc(100% - 8.88vw);
 `;
@@ -74,7 +41,7 @@ const FourthAhead = styled(PrideBrackets)`
 export default function () {
   return (
     <Premios>
-      <Subtitle>Prêmios</Subtitle>
+      <TorneioSectionTitle>Prêmios</TorneioSectionTitle>
       <Itens>
         <Item>
           <First>1º - R$ 3000,00</First>

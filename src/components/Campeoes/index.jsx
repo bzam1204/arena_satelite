@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import CardCampeao from "../CardCampeao";
-import { SectionTitle } from "../UI";
+import { SectionPD, SectionTitle } from "../UI";
 import Cores from "../UI/Cores";
 
-const Campeoes = styled.section`
+const Campeoes = styled(SectionPD)`
   height: fit-content;
   display: flex;
   flex-direction: column;

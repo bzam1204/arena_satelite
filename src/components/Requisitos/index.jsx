@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { ItensPD } from "../UI";
+import { ItensPD, TorneioSectionTitle } from "../UI";
 import Cores from "../UI/Cores";
 
 const Requisitos = styled.section`
@@ -15,22 +15,7 @@ const Requisitos = styled.section`
   padding: 0px 0px 4.44vw;
   width: 100%;
 `;
-const Subtitle = styled.div`
-  align-items: flex-start;
-  background: ${Cores.amarelo};
-  border-radius: 1.38vw 1.38vw 0px 0px;
-  color: ${Cores.cinzaEscuro};
-  display: flex;
-  flex-direction: row;
-  font-size: 8.88vw;
-  font-style: normal;
-  font-weight: 700;
-  height: 11.11vw;
-  justify-content: center;
-  line-height: 11.11vw;
-  padding: 2.22vw;
-  width: calc(100% - 4.44vw);
-`;
+
 const Itens = styled(ItensPD)`
   align-items: center;
   flex-direction: column;
@@ -44,20 +29,20 @@ const Item = styled.li`
 `;
 
 const Requisito = styled.p`
-  width: 100%;
-  height: fit-content;
+  color: ${Cores.cinzaEscuro};
+  font-size: 6.66vw;
   font-style: normal;
   font-weight: 500;
-  font-size: 6.66vw;
+  height: fit-content;
   line-height: 8.33vw;
-  color: ${Cores.cinzaEscuro};
+  width: 100%;
 `;
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default function () {
   return (
     <Requisitos>
-      <Subtitle>Requisitos</Subtitle>
+      <TorneioSectionTitle>Requisitos</TorneioSectionTitle>
       <Itens>
         <Item>
           <Requisito>Ser membro da Arena Satélite</Requisito>

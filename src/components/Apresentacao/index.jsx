@@ -15,11 +15,6 @@ const Apresentacao = styled.div`
   padding: 4.44vw;
   gap: 6.66vw;
   height: 116vw;
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
 `;
 
 const Logo = styled.div`

@@ -2,17 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import softgate from "../../assets/img/Slogo.svg";
 import hbEletronica from "../../assets/img/hbLogo.png";
-import { ItensPD, SectionTitle } from "../UI";
+import { ItensPD, SectionPD, SectionTitle } from "../UI";
 import Cores from "../UI/Cores";
 
-const Patrocinadores = styled.section`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+const Patrocinadores = styled(SectionPD)`
   gap: 11.11vw;
-  background-color: ${Cores.branco};
-  width: 100vw;
-  height: fit-content;
 `;
 
 const Itens = styled(ItensPD)`

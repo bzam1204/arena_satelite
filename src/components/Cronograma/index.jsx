@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { ItensPD, ParagraphPD } from "../UI";
 import Cores from "../UI/Cores";
 
 const Cronograma = styled.section`
@@ -30,12 +31,10 @@ const Subtitle = styled.div`
   padding: 2.22vw;
   width: calc(100% - 4.44vw);
 `;
-const Itens = styled.ul`
+const Itens = styled(ItensPD)`
   align-items: center;
-  display: flex;
   flex-direction: column;
   gap: 6.66vw;
-  height: fit-content;
   padding: 0px 4.44vw;
   width: calc(100% - 8.88vw);
 `;
@@ -44,15 +43,10 @@ const Item = styled.li`
   width: calc(100% - 8.88vw);
 `;
 
-const Evento = styled.p`
+const Evento = styled(ParagraphPD)`
+  text-align:  justify;
   width: 100%;
-  height: fit-content;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 6.66vw;
-  line-height: 8.33vw;
-  color: ${Cores.cinzaEscuro};
-`;
+  `
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default function () {

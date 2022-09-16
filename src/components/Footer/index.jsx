@@ -5,44 +5,37 @@ import insta from "../../assets/img/instaIcon.svg";
 import whats from "../../assets/img/whatsLogo.svg";
 import mail from "../../assets/img/mailIcon.svg";
 import Cores from "../UI/Cores";
+import { ItensPD, ParagraphPD, SectionPD } from "../UI";
 
-const Footer = styled.section`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+const Footer = styled(SectionPD)`
   padding: 4.44vw 0px 8.88vw;
-  gap: 16px;
-  width: 100vw;
-  height: fit-content;
-  background-color: ${Cores.branco};
+  gap: 4.44vw;
 `;
 
-const Itens = styled.ul`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+const Itens = styled(ItensPD)`
   align-items: flex-start;
-  padding: 0px;
   gap: 8.88vw;
-  width: 100vw;
   height: 13.33vw;
+  justify-content: center;
+  padding: 0px;
+  width: 100vw;
 `;
 
 const Item = styled.li`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 0px;
-  width: 13.33vw;
-  height: 13.33vw;
   background: ${Cores.amarelo};
   border-radius: 30vw;
+  display: flex;
+  flex-direction: column;
+  height: 13.33vw;
+  justify-content: center;
+  padding: 0px;
+  width: 13.33vw;
 `;
 
 const FaceIcon = styled.img`
-  width: 4.04vw;
   height: 6.66vw;
+  width: 4.04vw;
 `;
 
 const Insta = styled.img`
@@ -60,33 +53,18 @@ const Mail = styled.img`
   height: 5.33vw;
 `;
 
-const ArenaSatelite = styled.h1`
-  width: fit-content;
-  height: fit-content;
+const ArenaSatelite = styled(ParagraphPD)`
   font-family: notoDBold;
-  font-style: normal;
-  font-weight: 700;
   font-size: 11.11vw;
+  font-weight: 700;
   line-height: 15vw;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: ${Cores.cinzaEscuro};
+  text-indent: 0;
 `;
 
-const TodosOsDireitos = styled.p`
-  width: fit-content;
-  height: fit-content;
-  font-family: "Quicksand";
-  font-style: normal;
-  font-weight: 500;
+const TodosOsDireitos = styled(ParagraphPD)`
   font-size: 4.44vw;
   line-height: 5.55vw;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  text-indent: 2.22vw;
-  color: ${Cores.cinzaEscuro};
+  text-indent: 0;
 `;
 
 // eslint-disable-next-line import/no-anonymous-default-export

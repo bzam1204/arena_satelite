@@ -1,19 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import fotoGrupo from "../../assets/img/fotoGrupo.png";
-import { SectionTitle } from "../UI";
+import { SectionPD, SectionTitle } from "../UI";
 import Cores from "../UI/Cores";
 
-const QuemSomos = styled.section`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+const QuemSomos = styled(SectionPD)`
   padding: 0px;
   gap: 4.44vw;
-  width: calc(100vw);
-  background-color: ${Cores.branco};
-
-  height: fit-content;
 `;
 
 const FotoGrupo = styled.div`

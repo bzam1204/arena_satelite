@@ -4,17 +4,11 @@ import { Link } from "react-router-dom";
 import naoHaTorneios from "../../assets/img/naoHaTorneios.png";
 import poster from "../../assets/img/poster.png";
 import Cores from "../UI/Cores";
-import { SectionTitle, ItensPD } from "../UI";
+import { SectionTitle, ItensPD, SectionPD } from "../UI";
 
-const TorneiosAbertos = styled.section`
-  align-items: center;
-  display: flex;
-  flex-direction: column;
+const TorneiosAbertos = styled(SectionPD)`
   gap: 4.44vw;
-  height: fit-content;
   padding: 4.44vw 0 0;
-  width: 100vw;
-  background-color: ${Cores.branco};
 `;
 
 const Poster = styled.img`
