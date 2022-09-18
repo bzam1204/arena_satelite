@@ -3,86 +3,106 @@ import fotoDupla from "../../assets/img/campeoesEx.png";
 import Cores from "../UI/Cores";
 
 const CardCampeao = styled.li`
+  align-items: center;
+  justify-content: space-between;
+  background: ${Cores.branco};
+  border-radius: 1.38vw;
+  box-shadow: 2.7vw 2.7vw 5.5vw ${Cores.shadow};
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  height: 95.27vw;
   padding: 0px;
   width: 80vw;
-  height: 95.27vw;
-  background: ${Cores.amarelo};
-  box-shadow: 2.7vw 2.7vw 5.5vw ${Cores.shadow};
-  border-radius: 1.38vw;
+  position: relative;
 `;
 
-const Foto = styled.div`
+const BgTop = styled.div`
   width: 80vw;
-  height: 48.88vw;
-  background-image: url(${fotoDupla});
-  background-size: cover;
+  height: 30.83vw;
+  background: ${Cores.amarelo};
+  border-radius: 1.38vw 1.38vw 0px 0px;
 `;
 
-const Info = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 4.44vw 4.44vw 6.66vw;
-  gap: 4.44vw;
-  width: calc(100% - 8.88vw);
-  height: calc(46.66vw - 10vw);
+const ContainerFoto = styled.div`
+  position: absolute;
+  margin-top: 6.94vw;
+  width: 47.77vw;
+  height: 47.77vw;
+  border-radius: 50vw;
+  filter: drop-shadow(2.77vw 2.77vw 5.55vw rgba(0, 0, 0, 0.05));
+`;
+const BgFoto = styled.div`
+  width: 47.77vw;
+  border-radius: 50vw;
+  height: 47.77vw;
+  background: #ffffff;
+`;
+
+const Foto = styled.img`
+  border-radius: 50vw;
+  position: absolute;
+  margin: 1.66vw 0 0 1.66vw;
+  width: 44.44vw;
+  object-fit: cover;
+  height: 44.44vw;
 `;
 
 const Posicao = styled.h3`
-  width: fit-content;
-  height: fit-content;
+  background-color: ${Cores.amarelo};
+  border-radius: 0 0 1.38vw 1.38vw;
+  color: ${Cores.cinzaEscuro};
   font-family: "Quicksand";
+  font-size: 6.66vw;
+  font-style: normal;
   font-style: normal;
   font-weight: 500;
-  font-size: 11.66vw;
-  line-height: 14.16vw;
-
-  color: ${Cores.cinzaEscuro};
+  font-weight: 500;
+  height: fit-content;
+  line-height: 8.33vw;
+  margin: 0;
+  padding: 2.22vw 0;
+  text-align: center;
+  width: 100%;
 `;
 
 const TorneioNome = styled.h3`
-  width: fit-content;
-  height: fit-content;
-
-  font-family: notoLight;
-  font-style: normal;
-  font-weight: 400;
-  white-space: nowrap;
-
-  font-size: 4.44vw;
-  line-height: 6.11vw;
-  /* identical to box height */
-
   color: ${Cores.cinzaEscuro};
+  font-family: notoDBold;
+  font-size: 4.44vw;
+  font-style: normal;
+  height: fit-content;
+  line-height: 6.11vw;
+  margin-top: 26.11vw;
+  white-space: nowrap;
+  width: fit-content;
 `;
 
 const Categoria = styled.h3`
-  width: fit-content;
-  height: fit-content;
-  white-space: nowrap;
-  font-family: notoDBold;
+  color: ${Cores.cinzaEscuro};
+  font-family: notoLight;
+  font-size: 4.44vw;
   font-style: normal;
   font-weight: 700;
-  font-size: 4.44vw;
+  height: fit-content;
   line-height: 6.11vw;
-  /* identical to box height */
-  color: ${Cores.cinzaEscuro};
+  margin-top: 4.44vw;
+  margin-bottom: 9.16vw;
+  white-space: nowrap;
+  width: fit-content;
 `;
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default function () {
   return (
     <CardCampeao>
-      <Foto />
-      <Info>
-        <Posicao>1º Lugar</Posicao>
-        <TorneioNome>III Torneio Arena Satélite</TorneioNome>
-        <Categoria>Duplas Mistas</Categoria>
-      </Info>
+      <BgTop></BgTop>
+      <ContainerFoto>
+        <Foto src={fotoDupla}></Foto>
+        <BgFoto></BgFoto>
+      </ContainerFoto>
+      <TorneioNome>III Torneio Arena Satélite</TorneioNome>
+      <Categoria>Duplas Mistas</Categoria>
+      <Posicao>1º Lugar</Posicao>
     </CardCampeao>
   );
 }
