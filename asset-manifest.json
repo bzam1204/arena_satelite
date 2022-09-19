@@ -1,16 +1,20 @@
 {
   "files": {
     "main.css": "/arena_satelite/static/css/main.ec090f8b.css",
-    "main.js": "/arena_satelite/static/js/main.9e7a2005.js",
+    "main.js": "/arena_satelite/static/js/main.04c06e37.js",
     "static/media/demo.mp4": "/arena_satelite/static/media/demo.f5b965bd16d649d3c7cb.mp4",
     "static/media/campeoesEx.png": "/arena_satelite/static/media/campeoesEx.078e0781d6f08f5429f5.png",
     "static/media/NotoSans-Bold.ttf": "/arena_satelite/static/media/NotoSans-Bold.23e70cfbbe0783c66804.ttf",
     "static/media/NotoSans-Light.ttf": "/arena_satelite/static/media/NotoSans-Light.2cfb54d923b32fbd5525.ttf",
     "static/media/poster.png": "/arena_satelite/static/media/poster.a431e5d084d1721dfa07.png",
+    "static/media/video.png": "/arena_satelite/static/media/video.e32ca4b9d64fc6a22c48.png",
+    "static/media/arenaSportCampeoes.jpeg": "/arena_satelite/static/media/arenaSportCampeoes.7d542c31159489ab7789.jpeg",
+    "static/media/poster3.png": "/arena_satelite/static/media/poster3.6c65d91585201e51b2f6.png",
     "static/media/fotoGrupo.png": "/arena_satelite/static/media/fotoGrupo.441dd983b71fe79e4d3b.png",
     "static/media/Slogo.svg": "/arena_satelite/static/media/Slogo.6045433188a20ab30686062e0b6f6db5.svg",
     "static/media/fotoArena.png": "/arena_satelite/static/media/fotoArena.efbedcab23d9b48f02a7.png",
     "static/media/Quicksand-VariableFont_wght.ttf": "/arena_satelite/static/media/Quicksand-VariableFont_wght.cf52df73d8529b4815ed.ttf",
+    "static/media/poster2.png": "/arena_satelite/static/media/poster2.524b0b3dc889c47b446c.png",
     "static/media/naoHaTorneios.png": "/arena_satelite/static/media/naoHaTorneios.b5e3309084b3f08b84f7.png",
     "static/media/instaIcon.svg": "/arena_satelite/static/media/instaIcon.1633ba93a3a7d8a9f04b05e9984d13b3.svg",
     "static/media/facaParteIcon.svg": "/arena_satelite/static/media/facaParteIcon.edca62613bfed6c56db094d811db2e06.svg",
@@ -18,6 +22,7 @@
     "static/media/torneioIcon.svg": "/arena_satelite/static/media/torneioIcon.66c0ee8ea4a09ee65b1610980ea72dd1.svg",
     "static/media/backArrow.svg": "/arena_satelite/static/media/backArrow.b5a9dc56a07e5cc32cad58aaa1924ad6.svg",
     "static/media/faceIcon.svg": "/arena_satelite/static/media/faceIcon.ec9a6fcf8ccecc72404a0f889fbf06ba.svg",
+    "static/media/twiterIcon.svg": "/arena_satelite/static/media/twiterIcon.86183d856ff6a04f68ab.svg",
     "static/media/handshakeIcon.svg": "/arena_satelite/static/media/handshakeIcon.03b615b3203235031ef8a48c9f34572d.svg",
     "static/media/trophyIcon.svg": "/arena_satelite/static/media/trophyIcon.000dc411c13e428cb4cdc6a84655341b.svg",
     "index.html": "/arena_satelite/index.html",
@@ -25,10 +30,10 @@
     "static/media/quemSomosIcon.svg": "/arena_satelite/static/media/quemSomosIcon.f49be62cfc3e660a97142f1e0c010bb3.svg",
     "static/media/mailIcon.svg": "/arena_satelite/static/media/mailIcon.c0b0e62eef2a9339a58b7fadc82ae4ad.svg",
     "main.ec090f8b.css.map": "/arena_satelite/static/css/main.ec090f8b.css.map",
-    "main.9e7a2005.js.map": "/arena_satelite/static/js/main.9e7a2005.js.map"
+    "main.04c06e37.js.map": "/arena_satelite/static/js/main.04c06e37.js.map"
   },
   "entrypoints": [
     "static/css/main.ec090f8b.css",
-    "static/js/main.9e7a2005.js"
+    "static/js/main.04c06e37.js"
   ]
 }
