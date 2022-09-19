@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import fotoDupla from "../../assets/img/campeoesEx.png";
 import Cores from "../UI/Cores";
 
 const CardCampeao = styled.li`
@@ -19,7 +18,7 @@ const CardCampeao = styled.li`
 const BgTop = styled.div`
   width: 80vw;
   height: 30.83vw;
-  background: ${Cores.amarelo};
+  background: ${(props) => props.bgColor};
   border-radius: 1.38vw 1.38vw 0px 0px;
 `;
 
@@ -48,7 +47,7 @@ const Foto = styled.img`
 `;
 
 const Posicao = styled.h3`
-  background-color: ${Cores.amarelo};
+  background-color: ${(props) => props.bgColor};
   border-radius: 0 0 1.38vw 1.38vw;
   color: ${Cores.cinzaEscuro};
   font-family: "Quicksand";
@@ -91,18 +90,38 @@ const Categoria = styled.h3`
   width: fit-content;
 `;
 
+const getFoto = (foto) => {
+  const img = require(`../../assets/img/${foto}`);
+  return img;
+};
+
+const getPosition = (position) => {
+  return `${position}º lugar`;
+};
+
+const getCardColor = (position) => {
+  let color = 0;
+  position === 1 && (color = Cores.amarelo);
+  position === 2 && (color = Cores.prata);
+  position === 3 && (color = Cores.bronze);
+  position >= 4 && (color = Cores.verde);
+  return color;
+};
+
 // eslint-disable-next-line import/no-anonymous-default-export
-export default function () {
+export default function ({ dados }) {
   return (
     <CardCampeao>
-      <BgTop></BgTop>
+      <BgTop bgColor={getCardColor(dados.posicao)}></BgTop>
       <ContainerFoto>
-        <Foto src={fotoDupla}></Foto>
+        <Foto src={getFoto(dados.foto)}></Foto>
         <BgFoto></BgFoto>
       </ContainerFoto>
-      <TorneioNome>III Torneio Arena Satélite</TorneioNome>
-      <Categoria>Duplas Mistas</Categoria>
-      <Posicao>1º Lugar</Posicao>
+      <TorneioNome>{dados.torneioNome}</TorneioNome>
+      <Categoria>{dados.categoria}</Categoria>
+      <Posicao bgColor={getCardColor(dados.posicao)}>
+        {getPosition(dados.posicao)}
+      </Posicao>
     </CardCampeao>
   );
 }

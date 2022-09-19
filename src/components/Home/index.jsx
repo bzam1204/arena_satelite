@@ -9,6 +9,7 @@ import QuemSomos from "../QuemSomos";
 import TorneiosAbertos from "../TorneiosAbertos";
 import VemJogar from "../VemJogar";
 
+
 const Home = styled.div`
   width: 100vw;
   display: flex;
@@ -26,16 +27,18 @@ const Linguica = styled.div`
 // eslint-disable-next-line import/no-anonymous-default-export
 export default function () {
   return (
-    <Home>
-      <Apresentacao />
-      <Linguica />
-      <Navbar />
-      <Campeoes />
-      <Patrocinadores />
-      <TorneiosAbertos />
-      <QuemSomos />
-      <VemJogar />
-      <Footer />
-    </Home>
+    
+      <Home>
+        <Apresentacao />
+        <Linguica />
+        <Navbar />
+        <Campeoes />
+        <Patrocinadores />
+        <TorneiosAbertos />
+        <QuemSomos />
+        <VemJogar />
+        <Footer />
+      </Home>
+    
   );
 }
