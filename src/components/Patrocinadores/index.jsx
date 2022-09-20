@@ -4,13 +4,16 @@ import softgate from "../../assets/img/Slogo.svg";
 import hbEletronica from "../../assets/img/hbLogo.png";
 import { ItensPD, SectionPD, SectionTitle } from "../UI";
 import Cores from "../UI/Cores";
+import { useRecoilState } from "recoil";
+import { patrocinadoresState } from "../../states/patrocinadores";
 
 const Patrocinadores = styled(SectionPD)`
   gap: 11.11vw;
 `;
 
 const Itens = styled(ItensPD)`
-  padding: 4.44vw 0 8.88vw 4.44vw;
+  padding: 4.44vw 4.44vw 8.88vw 4.44vw;
+  width: calc(100% - 8.88vw);
 `;
 
 const Item = styled.li`
@@ -47,24 +50,27 @@ const Nome = styled.h3`
   color: ${Cores.cinzaEscuro};
 `;
 
+const getFoto = (foto) => {
+  const img = require(`../../assets/img/${foto}`);
+  return img;
+};
+
 // eslint-disable-next-line import/no-anonymous-default-export
 export default function () {
+  const [listaPatrocinadores, setListaPatrocinadores] =
+    useRecoilState(patrocinadoresState);
   return (
     <Patrocinadores data-patrocinadores>
       <SectionTitle>Patrocinadores</SectionTitle>
       <Itens>
-        <Item>
-          <Logo src={softgate} ></Logo>
-          <Nome>Softgate</Nome>
-        </Item>
-        <Item>
-          <Logo src={hbEletronica} ></Logo>
-          <Nome>hbEletrônica</Nome>
-        </Item>
-        <Item>
-          <Logo src={softgate} ></Logo>
-          <Nome>Softgate</Nome>
-        </Item>
+        {listaPatrocinadores.map((item) => {
+          return (
+            <Item key={item.id}>
+              <Logo src={getFoto(item.img)}></Logo>
+              <Nome>{item.nome}</Nome>
+            </Item>
+          );
+        })}
       </Itens>
     </Patrocinadores>
   );

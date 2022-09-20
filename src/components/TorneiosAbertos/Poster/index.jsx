@@ -9,6 +9,7 @@ const Poster = styled.img`
   width: 88.11vw;
 `;
 const Item = styled.li``;
+
 const getFoto = (foto) => {
   const img = require(`../../../assets/img/${foto}`);
   return img;
@@ -19,7 +20,7 @@ export default function ({ dados }) {
   return (
     <Item>
       <Link to={`/${dados.nome.replaceAll(" ", "_")}`}>
-        <Poster key={dados.id} src={getFoto(dados.foto)}></Poster>
+        <Poster src={getFoto(dados.foto)}></Poster>
       </Link>
     </Item>
   );

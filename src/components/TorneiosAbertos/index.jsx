@@ -28,7 +28,7 @@ export default function () {
       <SectionTitle>Torneios Abertos</SectionTitle>
       <Itens>
         {listaTorneios.map((element) => {
-          return <Poster dados={element}></Poster>;
+          return <Poster key={element.id} dados={element}></Poster>;
         })}
       </Itens>
     </TorneiosAbertos>
