@@ -1,4 +1,5 @@
 import { atom } from "recoil";
+import hashcode from "../js/hashcode";
 
 export const torneiosState = atom({
   key: "torneiosState",
@@ -7,6 +8,7 @@ export const torneiosState = atom({
       id: 1,
       foto: "poster.png",
       nome: "6 Torneio Arena Satélite",
+      code: "1921339424",
       premios: [
         "R$ 5000,00",
         "1 Iphone 14",
@@ -26,8 +28,10 @@ export const torneiosState = atom({
     },
     {
       id: 2,
-      foto: "poster2.png",
       nome: "X Torneio Arena Satélite",
+      code: "356890178",
+      foto: "poster2.png",
+
       premios: [
         "R$ 20000,00",
         "R$ 10000,00",
@@ -50,8 +54,10 @@ export const torneiosState = atom({
     },
     {
       id: 3,
-      foto: "poster3.png",
       nome: "XX Torneio Arena Satélite",
+      code: "1532281366",
+      foto: "poster3.png",
+
       premios: [
         "R$ 200000,00",
         "R$ 100000,00",

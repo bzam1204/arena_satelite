@@ -15,7 +15,7 @@ function App() {
           return (
             <Route
               key={item.id}
-              path={`${item.nome.replaceAll(" ", "_")}`}
+              path={`${item.code}`}
               element={<Torneios dados={item} />}
             />
           );

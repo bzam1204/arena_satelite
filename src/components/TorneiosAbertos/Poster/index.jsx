@@ -19,7 +19,7 @@ const getFoto = (foto) => {
 export default function ({ dados }) {
   return (
     <Item>
-      <Link to={`/${dados.nome.replaceAll(" ", "_")}`}>
+      <Link to={`/${dados.code}`}>
         <Poster src={getFoto(dados.foto)}></Poster>
       </Link>
     </Item>

@@ -9,6 +9,7 @@ import { SectionTitle, ItensPD, SectionPD } from "../UI";
 import { useRecoilState } from "recoil";
 import { torneiosState } from "../../states/torneiosState";
 import Poster from "./Poster";
+import hashCode from "../../js/hashcode";
 
 const TorneiosAbertos = styled(SectionPD)`
   gap: 4.44vw;
@@ -19,6 +20,8 @@ const Itens = styled(ItensPD)`
   padding: 8.88vw 4.44vw 11.88vw 4.44vw;
   width: calc(100% - 8.88vw);
 `;
+
+
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default function () {
