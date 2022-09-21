@@ -24,43 +24,41 @@ const Itens = styled(ItensPD)`
 `;
 const Item = styled.li``;
 
-const First = styled(PrideBrackets)`
-  background: ${Cores.ouro};
-`;
-const Second = styled(PrideBrackets)`
-  background: ${Cores.prata};
-`;
-const Third = styled(PrideBrackets)`
-  background: ${Cores.bronze};
-`;
-const FourthAhead = styled(PrideBrackets)`
-  background: ${Cores.cinzaClaro};
+const Position = styled(PrideBrackets)`
+  background: ${(props) => props.color};
+  justify-content: left;
 `;
 
+const getPremioName = (premioName, index) => {
+  premioName = `${index + 1}º - ${premioName}`;
+  return premioName;
+};
+
+const getColor = (index) => {
+  let color = "";
+  index === 0 && (color = Cores.ouro);
+  index === 1 && (color = Cores.prata);
+  index === 2 && (color = Cores.bronze);
+  index >= 3 && (color = Cores.cinzaClaro);
+
+  return color;
+};
+
 // eslint-disable-next-line import/no-anonymous-default-export
-export default function () {
+export default function ({ premiosList }) {
   return (
     <Premios>
       <TorneioSectionTitle>Prêmios</TorneioSectionTitle>
       <Itens>
-        <Item>
-          <First>1º - R$ 3000,00</First>
-        </Item>
-        <Item>
-          <Second>2º - R$ 2000,00</Second>
-        </Item>
-        <Item>
-          <Third>3º - R$ 1000,00</Third>
-        </Item>
-        <Item>
-          <FourthAhead>4º - R$ 500,00</FourthAhead>
-        </Item>
-        <Item>
-          <FourthAhead>5º - R$ 500,00</FourthAhead>
-        </Item>
-        <Item>
-          <FourthAhead>6º - R$ 500,00</FourthAhead>
-        </Item>
+        {premiosList.map((premio, index) => {
+          return (
+            <Item>
+              <Position color={getColor(index)}>
+                {getPremioName(premio, index)}
+              </Position>
+            </Item>
+          );
+        })}
       </Itens>
     </Premios>
   );

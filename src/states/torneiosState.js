@@ -7,7 +7,7 @@ export const torneiosState = atom({
     {
       id: 1,
       foto: "poster.png",
-      nome: "6 Torneio Arena Satélite",
+      nome: "VI Torneio Arena Satélite",
       code: "1921339424",
       premios: [
         "R$ 5000,00",

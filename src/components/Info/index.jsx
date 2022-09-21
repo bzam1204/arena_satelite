@@ -5,7 +5,6 @@ import InscreverSe from "../InscreverSe";
 import Premios from "../Premios";
 import Requisitos from "../Requisitos";
 
-
 const Info = styled.section`
   align-items: center;
   display: flex;
@@ -17,13 +16,13 @@ const Info = styled.section`
 `;
 
 // eslint-disable-next-line import/no-anonymous-default-export
-export default function () {
+export default function ({ dados }) {
   return (
     <Info>
-      <Premios></Premios>
-      <Requisitos></Requisitos>
-      <Cronograma></Cronograma>
-      <InscreverSe></InscreverSe>
+      <Premios premiosList={dados.premios}></Premios>
+      <Requisitos dados={dados.requisitos}></Requisitos>
+      <Cronograma dados={dados.cronograma}></Cronograma>
+      <InscreverSe ></InscreverSe>
     </Info>
   );
 }
